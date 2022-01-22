@@ -71,7 +71,7 @@ public class Cozinha extends Ingrediente {
 
 
     public static void ListaIngrediente(ArrayList<Ingrediente> listaIngredientes) {
-        listaIngredientes.add((new Ingrediente("Alho Poró", 09/12/2023)));
+        listaIngredientes.add((new Ingrediente("Alho Poró", 9/12/2023)));
 
         
     
