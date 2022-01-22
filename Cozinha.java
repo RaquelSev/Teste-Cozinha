@@ -1,9 +1,13 @@
-public class Cozinha {
 
-    int horaAbertura = 0;
-    int horaFechamento = 0;
-    String nomeCozinha = "";
-    String pratoPrincipal = "";
+
+public class Cozinha extends Ingrediente {
+
+    protected int horaAbertura = 0;
+    protected int horaFechamento = 0;
+    protected String nomeCozinha = "";
+    protected String pratoPrincipal = "";
+
+    private ArrayList<Ingrediente> ingredientes;
 
     
     public Cozinha(int horaAbertura, int horaFechamento, String nomeCozinha, String pratoPrincipal) {
@@ -53,7 +57,7 @@ public class Cozinha {
         this.pratoPrincipal = pratoPrincipal;
     }
 
-    
+
 
     @Override
     public String toString() {
