@@ -1,11 +1,13 @@
 import java.util.Date;
+import java.util.ArrayList;
 
 
 public class Ingrediente {
 
 
-    String nome = "";
-    Date dataValidade;
+    protected String nome = "";
+    protected Date dataValidade;
+    ArrayList<Ingrediente> linstaIngredientes = new ArrayList<Ingrediente>();
 
 
     public Ingrediente(String nome, Date dataValidade) {

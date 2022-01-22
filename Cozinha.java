@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Date;
 
 
 public class Cozinha extends Ingrediente {
@@ -6,15 +8,16 @@ public class Cozinha extends Ingrediente {
     protected int horaFechamento = 0;
     protected String nomeCozinha = "";
     protected String pratoPrincipal = "";
-
-    private ArrayList<Ingrediente> ingredientes;
-
     
-    public Cozinha(int horaAbertura, int horaFechamento, String nomeCozinha, String pratoPrincipal) {
+
+    public Cozinha(String nome, Date dataValidade, int horaAbertura, int horaFechamento, String nomeCozinha,
+            String pratoPrincipal) {
+        super(nome, dataValidade);
         this.horaAbertura = horaAbertura;
         this.horaFechamento = horaFechamento;
         this.nomeCozinha = nomeCozinha;
         this.pratoPrincipal = pratoPrincipal;
+
     }
 
 
@@ -65,7 +68,13 @@ public class Cozinha extends Ingrediente {
                 + nomeCozinha + ", Prato Principal=" + pratoPrincipal + "]";
     }
 
+
+
+    public static void ListaIngrediente(ArrayList<Ingrediente> listaIngredientes) {
+        listaIngredientes.add((new Ingrediente("Alho Poró", 09/12/2023)));
+
+        
     
-    
+
     
 }
