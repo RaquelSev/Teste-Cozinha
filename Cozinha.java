@@ -10,6 +10,7 @@ public class Cozinha extends Ingrediente {
     protected int horaAbertura = 0;
     protected int horaFechamento = 0;
     protected String pratoPrincipal = "";
+    protected String listaIngredientes [];
 
     ArrayList<Ingrediente> linstaIngredientes = new ArrayList<Ingrediente>();
     
