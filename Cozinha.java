@@ -26,7 +26,12 @@ public class Cozinha extends Ingrediente {
 
         ArrayList<Ingrediente> listaIngredienteCozinhaChinesa = new ArrayList<Ingrediente>();
 
-        listaIngredienteCozinhaChinesa.add("Feijão, Farinha, Arroz, Carne de Porco, Linguiça", 09/12/2023); 
+
+        SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy"); 
+        Date dataFormatada = formato.parse("08/02/2022");
+
+        listaIngredienteCozinhaChinesa.add("Feijão", dataFormatada); 
+
         //faço para cada ingrediente? estou confusa
         //Mas aqui nao tem que fazer o 
         //SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy"); 
