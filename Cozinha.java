@@ -10,11 +10,21 @@ public class Cozinha extends Ingrediente {
     protected int horaAbertura = 0;
     protected int horaFechamento = 0;
     protected String pratoPrincipal = "";
-    protected String listaIngredientes [];
+    protected Ingrediente [] listaIngredientes;
 
-    ArrayList<Ingrediente> linstaIngredientes = new ArrayList<Ingrediente>();
     
+    public Cozinha (String nomeIngrediente, Date dataValidade, String nomeCozinha, int horaAbertura, int horaFechamento, String pratoPrincipal, Ingrediente listaIngredientes) {
+        super (nomeIngrediente, dataValidade);
+        this.nomeCozinha = nomeCozinha;
+        this.horaAbertura = horaAbertura;
+        this.horaFechamento = horaFechamento;
+        this.pratoPrincipal = pratoPrincipal;
 
+        ArrayList<Ingrediente> = new ArrayList listaIngredientes;
+
+
+
+    }
     
 
 

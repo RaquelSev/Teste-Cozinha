@@ -6,13 +6,13 @@ import java.text.SimpleDateFormat;
 public class Ingrediente {
 
 
-    protected String nome = "";
+    protected String nomeIngrediente = "";
     protected Date dataValidade;
     
 
 
-    public Ingrediente(String nome, Date dataValidade) {
-        this.nome = nome;
+    public Ingrediente(String nomeIngrediente, Date dataValidade) {
+        this.nomeIngrediente = nomeIngrediente;
         this.dataValidade = dataValidade;
     }
 
@@ -22,8 +22,8 @@ public class Ingrediente {
     }
 
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeIngrediente(String nomeIngrediente) {
+        this.nomeIngrediente = nomeIngrediente;
     }
 
 
