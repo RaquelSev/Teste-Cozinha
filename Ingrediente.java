@@ -1,41 +1,30 @@
-import java.util.Date;
-import java.util.ArrayList;
-import java.text.SimpleDateFormat;
 
+import java.time.LocalDate;
 
 public class Ingrediente {
 
-
     protected String nomeIngrediente = "";
-    protected Date dataValidade;
+    protected LocalDate dataValidade;
 
-
-    public Ingrediente(String nomeIngrediente, Date dataValidade) {
+    public Ingrediente(String nomeIngrediente, LocalDate dataValidade) {
         this.nomeIngrediente = nomeIngrediente;
         this.dataValidade = dataValidade;
     }
-
 
     public String getNomeIngrediente() {
         return nomeIngrediente;
     }
 
-
     public void setNomeIngrediente(String nomeIngrediente) {
         this.nomeIngrediente = nomeIngrediente;
     }
 
-
-    public Date getDataValidade() {
+    public LocalDate getDataValidade() {
         return dataValidade;
     }
 
-
-    public void setDataValidade(Date dataValidade) {
+    public void setDataValidade(LocalDate dataValidade) {
         this.dataValidade = dataValidade;
     }
-   
 
 }
-
-
