@@ -1,6 +1,8 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.text.SimpleDateFormat;
+
 
 public class Cozinha extends Ingrediente {
 
@@ -69,17 +71,21 @@ public class Cozinha extends Ingrediente {
     }
 
 
+   
+         ArrayList<Ingrediente> linstaIngredientes = new ArrayList<Ingrediente>();
 
-    public static void ListaIngrediente(ArrayList<Ingrediente> listaIngredientes) {
+         public void criarListaIngredientes(ArrayList<Ingrediente> listaIngredientes) throws ParseException {
 
-        SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy"); 
-        Date dataFormatadaValidade = formato.parse("08/02/2022");
-
-        listaIngredientes.add((new Ingrediente
+            SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy"); 
+            Date dataFormatadaValidade = formato.parse("08/02/2022");
+    
+            listaIngredientes.add
         
-        ("Alho Poró", dataFormatadaValidade);
+            ((new Ingrediente
+            ("Alho Poró", dataFormatadaValidade)));
+            
+    }
 
-  
-        
-
+   
+            
 }

@@ -9,7 +9,6 @@ public class Ingrediente {
     protected String nome = "";
     protected Date dataValidade;
     
-    ArrayList<Ingrediente> linstaIngredientes = new ArrayList<Ingrediente>();
 
 
     public Ingrediente(String nome, Date dataValidade) {
