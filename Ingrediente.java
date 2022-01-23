@@ -1,5 +1,6 @@
 import java.util.Date;
 import java.util.ArrayList;
+import java.text.SimpleDateFormat;
 
 
 public class Ingrediente {
@@ -7,6 +8,7 @@ public class Ingrediente {
 
     protected String nome = "";
     protected Date dataValidade;
+    
     ArrayList<Ingrediente> linstaIngredientes = new ArrayList<Ingrediente>();
 
 

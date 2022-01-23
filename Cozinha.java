@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Date;
-
+import java.text.SimpleDateFormat;
 
 public class Cozinha extends Ingrediente {
 
@@ -71,11 +71,15 @@ public class Cozinha extends Ingrediente {
 
 
     public static void ListaIngrediente(ArrayList<Ingrediente> listaIngredientes) {
-        listaIngredientes.add((new Ingrediente("Alho Poró", 9/12/2023)));
-        listaIngredientes.add((new Ingrediente("Brócolis", 8/10/2023)));
 
+        SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy"); 
+        Date dataFormatadaValidade = formato.parse("08/02/2022");
+
+        listaIngredientes.add((new Ingrediente
         
-    
+        ("Alho Poró", dataFormatadaValidade);
 
-    
+  
+        
+
 }
