@@ -11,7 +11,7 @@ import java.util.Date;
 
 //     }
 
-    Cozinha cozinhaMineira = new Cozinha (14, 20, "Cozinha Mineira", "Feijoada" );
+    Cozinha cozinhaMineira = new Cozinha (14, 20, "Cozinha Mineira", "Feijoada");
 
  
         // super(nome, dataValidade);
