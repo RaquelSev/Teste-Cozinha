@@ -1,4 +1,6 @@
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
  public class App {
@@ -13,14 +15,11 @@ import java.util.Date;
         
  listaIngredientes.add
             
-       ((new Ingrediente
-          ("Alho Poró", dataFormatadaValidade)));
-    
-    
+       ((new Ingrediente ("Alho Poró", dataFormatadaValidade)));
         
    }
 
-    Cozinha cozinhaMineira = new Cozinha (14, 20, "Cozinha Mineira", "Feijoada");
+    Cozinha cozinhaMineira = new Cozinha ("Cozinha Mineira", 14, 20, "Feijoada");
 
  
         // super(nome, dataValidade);

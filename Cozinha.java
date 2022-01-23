@@ -14,6 +14,9 @@ public class Cozinha extends Ingrediente {
 
 
 
+
+
+
     public Cozinha(String nomeIngrediente, Date dataValidade, String nomeCozinha, int horaAbertura, int horaFechamento,
             String pratoPrincipal, Ingrediente[] listaIngredientes) {
         super(nomeIngrediente, dataValidade);
@@ -22,13 +25,7 @@ public class Cozinha extends Ingrediente {
         this.horaFechamento = horaFechamento;
         this.pratoPrincipal = pratoPrincipal;
         this.listaIngredientes = listaIngredientes;
-
-        ArrayList<Ingrediente> listaIngredientesCozinha = new ArrayList<Ingrediente>();
-        
     }
-
-
-
 
 
     public int getHoraAbertura() {
