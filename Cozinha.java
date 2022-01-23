@@ -10,21 +10,28 @@ public class Cozinha extends Ingrediente {
     protected int horaAbertura = 0;
     protected int horaFechamento = 0;
     protected String pratoPrincipal = "";
-    protected Ingrediente [] listaIngredientes;
-
-
-
-
+    protected ArrayList<Ingrediente> ingredientes;
 
 
     public Cozinha(String nomeIngrediente, Date dataValidade, String nomeCozinha, int horaAbertura, int horaFechamento,
-            String pratoPrincipal, Ingrediente[] listaIngredientes) {
+            String pratoPrincipal, ArrayList<Ingrediente> ingredientes) {
         super(nomeIngrediente, dataValidade);
         this.nomeCozinha = nomeCozinha;
         this.horaAbertura = horaAbertura;
         this.horaFechamento = horaFechamento;
         this.pratoPrincipal = pratoPrincipal;
-        this.listaIngredientes = listaIngredientes;
+        this.ingredientes = ingredientes;
+
+        ArrayList<Ingrediente> listaIngredienteCozinhaMineira = new ArrayList<Ingrediente>();
+
+        ArrayList<Ingrediente> listaIngredienteCozinhaChinesa = new ArrayList<Ingrediente>();
+
+        listaIngredienteCozinhaChinesa.add("Feijão, Farinha, Arroz, Carne de Porco, Linguiça", 09/12/2023); 
+        //faço para cada ingrediente? estou confusa
+        //Mas aqui nao tem que fazer o 
+        //SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy"); 
+          //Date dataFormatadaValidade = formato.parse("08/02/2022");
+
     }
 
 

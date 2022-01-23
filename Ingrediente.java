@@ -8,7 +8,6 @@ public class Ingrediente {
 
     protected String nomeIngrediente = "";
     protected Date dataValidade;
-    
 
 
     public Ingrediente(String nomeIngrediente, Date dataValidade) {
