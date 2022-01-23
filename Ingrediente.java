@@ -17,8 +17,8 @@ public class Ingrediente {
     }
 
 
-    public String getNome() {
-        return nome;
+    public String getNomeIngrediente() {
+        return nomeIngrediente;
     }
 
 

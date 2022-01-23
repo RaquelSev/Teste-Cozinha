@@ -4,12 +4,21 @@ import java.util.Date;
  public class App {
 
 
-//     public static void main(String[] args) {
+     public static void main(String[] args) {
 
+        public void criarListaIngredientes(ArrayList<Ingrediente> listaIngredientes) throws ParseException {
 
+             SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy"); 
+          Date dataFormatadaValidade = formato.parse("08/02/2022");
         
-
-//     }
+ listaIngredientes.add
+            
+       ((new Ingrediente
+          ("Alho Poró", dataFormatadaValidade)));
+    
+    
+        
+   }
 
     Cozinha cozinhaMineira = new Cozinha (14, 20, "Cozinha Mineira", "Feijoada");
 

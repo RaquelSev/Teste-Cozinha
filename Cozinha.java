@@ -12,20 +12,23 @@ public class Cozinha extends Ingrediente {
     protected String pratoPrincipal = "";
     protected Ingrediente [] listaIngredientes;
 
-    
-    public Cozinha (String nomeIngrediente, Date dataValidade, String nomeCozinha, int horaAbertura, int horaFechamento, String pratoPrincipal, Ingrediente listaIngredientes) {
-        super (nomeIngrediente, dataValidade);
+
+
+    public Cozinha(String nomeIngrediente, Date dataValidade, String nomeCozinha, int horaAbertura, int horaFechamento,
+            String pratoPrincipal, Ingrediente[] listaIngredientes) {
+        super(nomeIngrediente, dataValidade);
         this.nomeCozinha = nomeCozinha;
         this.horaAbertura = horaAbertura;
         this.horaFechamento = horaFechamento;
         this.pratoPrincipal = pratoPrincipal;
+        this.listaIngredientes = listaIngredientes;
 
-        ArrayList<Ingrediente> = new ArrayList listaIngredientes;
-
-
-
+        ArrayList<Ingrediente> listaIngredientesCozinha = new ArrayList<Ingrediente>();
+        
     }
-    
+
+
+
 
 
     public int getHoraAbertura() {
@@ -76,21 +79,6 @@ public class Cozinha extends Ingrediente {
     }
 
 
-   
-         
 
-        //  public void criarListaIngredientes(ArrayList<Ingrediente> listaIngredientes) throws ParseException {
-
-        //     SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy"); 
-        //     Date dataFormatadaValidade = formato.parse("08/02/2022");
-    
-        //     listaIngredientes.add
-        
-        //     ((new Ingrediente
-        //     ("Alho Poró", dataFormatadaValidade)));
             
     }
-
-   
-            
-}
