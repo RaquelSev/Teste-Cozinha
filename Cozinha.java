@@ -6,21 +6,15 @@ import java.util.Date;
 
 public class Cozinha extends Ingrediente {
 
+    protected String nomeCozinha = "";
     protected int horaAbertura = 0;
     protected int horaFechamento = 0;
-    protected String nomeCozinha = "";
     protected String pratoPrincipal = "";
+
+    ArrayList<Ingrediente> linstaIngredientes = new ArrayList<Ingrediente>();
     
 
-    public Cozinha(String nome, Date dataValidade, int horaAbertura, int horaFechamento, String nomeCozinha,
-            String pratoPrincipal) {
-        super(nome, dataValidade);
-        this.horaAbertura = horaAbertura;
-        this.horaFechamento = horaFechamento;
-        this.nomeCozinha = nomeCozinha;
-        this.pratoPrincipal = pratoPrincipal;
-
-    }
+    
 
 
     public int getHoraAbertura() {
@@ -72,17 +66,17 @@ public class Cozinha extends Ingrediente {
 
 
    
-         ArrayList<Ingrediente> linstaIngredientes = new ArrayList<Ingrediente>();
+         
 
-         public void criarListaIngredientes(ArrayList<Ingrediente> listaIngredientes) throws ParseException {
+        //  public void criarListaIngredientes(ArrayList<Ingrediente> listaIngredientes) throws ParseException {
 
-            SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy"); 
-            Date dataFormatadaValidade = formato.parse("08/02/2022");
+        //     SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy"); 
+        //     Date dataFormatadaValidade = formato.parse("08/02/2022");
     
-            listaIngredientes.add
+        //     listaIngredientes.add
         
-            ((new Ingrediente
-            ("Alho Poró", dataFormatadaValidade)));
+        //     ((new Ingrediente
+        //     ("Alho Poró", dataFormatadaValidade)));
             
     }
 
