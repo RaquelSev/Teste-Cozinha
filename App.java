@@ -45,5 +45,6 @@ public class App {
 
         Cozinha cozinhaChinesa = new Cozinha("Cozinha Chinesa", 10, 23, "Yakissoba", listaIngredienteCozinhaChinesa);
 
+       System.out.println(cozinhaChinesa.contagemIngredientes());
     }
 }

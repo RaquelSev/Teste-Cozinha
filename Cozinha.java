@@ -1,5 +1,10 @@
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Cozinha {
 
@@ -8,6 +13,7 @@ public class Cozinha {
     protected int horaFechamento = 0;
     protected String pratoPrincipal = "";
     protected ArrayList<Ingrediente> ingredientes;
+    protected int count = 0;
 
     public Cozinha(String nomeCozinha, int horaAbertura, int horaFechamento,
             String pratoPrincipal, ArrayList<Ingrediente> ingredientes) {
@@ -19,14 +25,13 @@ public class Cozinha {
 
     }
 
-    // public List <Veiculo> ListaVeiculoOrdenado() {
-    //     return veiculo.stream()
-    //     .sorted(Comparator.comparing(veiculo -> veiculo.getAnoFabricacao())) 
-    //     .collect(Collectors.toList());
+    
+    public int contagemIngredientes () {
+
+        return ingredientes.size();
 
     }
 
-    // 4a etapa: Crie um método na classe Cozinha que retorne quantos ingredientes possui na Cozinha.
 
     public int getHoraAbertura() {
         return horaAbertura;
