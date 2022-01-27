@@ -8,7 +8,7 @@ public class Cozinha {
     protected int horaFechamento = 0;
     protected String pratoPrincipal = "";
     protected ArrayList<Ingrediente> ingredientes;
-    protected int count = 0;
+  
 
     public Cozinha(String nomeCozinha, int horaAbertura, int horaFechamento,
             String pratoPrincipal, ArrayList<Ingrediente> ingredientes) {
